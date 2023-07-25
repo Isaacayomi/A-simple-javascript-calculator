@@ -2,7 +2,7 @@ let calculation = " "; //Variable where numbers are stored
 
 // Function that logs the number 1 to the console
 function num1(){
-    calculation = calculation + 1;
+    calculation +=  1;
     document.getElementById("display-screen").innerText = calculation;
 }
 
@@ -101,9 +101,7 @@ function divfunc(){
 }
 
 function clrfunc(){
-    calculation = 0;
-    // console.log(calculation)
-    document.getElementById("display-screen").innerText = calculation;
-    document.getElementById("output-screen").innerText = calculation;
-
+    calculation = " ";
+    document.getElementById("display-screen").innerHTML = calculation;
+    document.getElementById("output-screen").innerHTML = calculation;
 }
