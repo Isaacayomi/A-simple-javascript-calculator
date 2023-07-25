@@ -73,7 +73,7 @@ function num0(){
 function equalfunc(){
     calculation = eval(calculation);
     // console.log(calculation)
-    document.getElementById("display-screen").innerText = calculation;
+    document.getElementById("output-screen").innerText = calculation;
 }
 
 function addfunc(){
@@ -104,4 +104,6 @@ function clrfunc(){
     calculation = 0;
     // console.log(calculation)
     document.getElementById("display-screen").innerText = calculation;
+    document.getElementById("output-screen").innerText = calculation;
+
 }

@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<p id="display-screen"></p>
+<div class="calculator-wrapper">
+    <p id="display-screen"></p>
+<p id="output-screen"> </p>
 
     <p>
         <button onclick="num1()">1</button>
@@ -39,8 +42,9 @@
     </p>
 
     <p>
-        <button onclick="clrfunc()">CLEAR</button>
+        <button onclick="clrfunc()" id="clear-btn">CLEAR</button>
     </p>
+</div>
    
 
     <script src="script.js"></script>
