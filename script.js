@@ -1,107 +1,127 @@
-let calculation = " "; //Variable where numbers are stored
+let calculation = localStorage.getItem('updatedScore'); //Variable where numbers are stored;
+
+if (calculation === null){
+    calculation = 0
+};
 
 // Function that logs the number 1 to the console
-function num1(){
-    calculation +=  1;
+function num1() {
+    calculation += 1;
+    localStorage.setItem('updatedScore' , calculation);
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 2 to the console
-function num2(){
+function num2() {
     calculation = calculation + 2;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 3 to the console
-function num3(){
+function num3() {
     calculation = calculation + 3;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 4 to the console
-function num4(){
+function num4() {
     calculation = calculation + 4;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 5 to the console
-function num5(){
+function num5() {
     calculation = calculation + 5;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 6 to the console
-function num6(){
+function num6() {
     calculation = calculation + 6;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 7 to the console
-function num7(){
+function num7() {
     calculation = calculation + 7;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 8 to the console
-function num8(){
+function num8() {
     calculation = calculation + 8;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 9 to the console
-function num9(){
+function num9() {
     calculation = calculation + 9;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // Function that logs the number 0 to the console
-function num0(){
+function num0() {
     calculation = calculation + 0;
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
 // function that equates the entire calculation
-function equalfunc(){
+function equalfunc() {
     calculation = eval(calculation);
-    // console.log(calculation)
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("output-screen").innerText = calculation;
 }
 
-function addfunc(){
+function addfunc() {
     calculation = calculation + " + ";
-    // console.log(calculation);
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
-function subfunc(){
+function subfunc() {
     calculation = calculation + " - ";
-    // console.log(calculation);
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
-function mulfunc(){
+function mulfunc() {
     calculation = calculation + " * ";
-    // console.log(calculation);
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
-function divfunc(){
+function divfunc() {
     calculation = calculation + " / ";
-    // console.log(calculation);
+    localStorage.setItem('updatedScore' , calculation);
+
     document.getElementById("display-screen").innerText = calculation;
 }
 
-function clrfunc(){
+function clrfunc() {
     calculation = " ";
     document.getElementById("display-screen").innerHTML = calculation;
     document.getElementById("output-screen").innerHTML = calculation;
+    localStorage.removeItem('updatedScore')
 }
